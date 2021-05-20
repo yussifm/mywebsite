@@ -1,20 +1,169 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 
-header{
-    padding: 15px;
-    margin-bottom: 40px;
-    display: flex;
-    justify-content: space-between;
+header nav {
+	padding: 15px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
 }
- 
-header nav ul {
-    display: flex;
-    align-items: baseline;
-    list-style-type: none;
+
+/* Logo */
+.nav-logo {
+	font-size: 1em;
+    text-align: center;
+    margin-bottom: 5%;
 }
+.nav-logo h2{
+    color: rgb(77, 76, 76);
+    text-align: center;
+}
+
+@keyframes linkanim {
+    from{
+        background-color: linear-gradient(145deg, #23dca4, #1eb98a);
+    }
+    to{
+        background-color: #21ce99; 
+    }
+}
+
+
 
 #logo{
-border-radius: 50px;
-background: #e0e0e0;
-box-shadow:  20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 2%;
+    object-fit: cover;
+border-radius: 164px;
+background: linear-gradient(145deg, #ffffff, #e6e6e6);
+box-shadow:  5px 5px 10px #666666,
+             -5px -5px 10px #ffffff;
+}
+
+/* Logo end */
+
+/* Nav list */
+.nav-list ul li {
+	padding: 0.5em;
+	list-style-type: none;
+	margin-bottom: 1em;
+ 
+
+
+}
+
+.nav-list ul li a{
+  color:  #525252;
+  font-size: 1.3em;
+  transition-property: padding;
+  transition-timing-function: ease-in-out;
+ 
+}
+
+.nav-list ul li a:hover{
+    padding: 0.5em;
+    border-radius: 5px;
+    animation-name: linkanim ;
+    
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+/* Nav list end */
+
+a {
+	text-decoration: none;
+}
+
+/* Social */
+.nav-social ul li {
+	list-style-type: none;
+
+	display: inline;
+
+	text-align: center;
+}
+
+.nav-social ul li a{
+    transition-property: padding;
+  transition-timing-function: ease-in-out;
+}
+.nav-social ul li a:hover{
+    padding: 15px;
+}
+
+.nav-social {
+    display:flex;
+    justify-content:flex-start;
+    align-content: flex-start;
+}
+
+.social-box {
+	margin: 2.5em 1.5em 0 0;
+	font-size: 1.2em;
+	padding: 0.5em;
+	border-radius: 108px;
+	background: linear-gradient(145deg, #e6e6e6, #ffffff);
+	box-shadow: 15px 15px 31px #ededed, -15px -15px 31px #ffffff;
+}
+
+/* Social end */
+
+
+@media screen and (max-width: 800px) {
+    .nav-list ul li{
+        display: inline;
+    }
+    .nav-logo{
+        margin-bottom: 15%;
+        text-align: center;
+        font-size: 2em;
+    }
+    .nav-list{
+        margin-bottom: 10%;
+        text-align: center;
+        font-size: 2em;
+    }
+    .social-box{
+        font-size: 2em;
+    }
+}
+
+
+@media screen and (max-width: 530px){
+    .social-box{
+        font-size: 1.2em;
+        text-align: center;
+    }
+    .nav-list{
+        font-size: 1.2em;
+    }
+
+    .nav-logo h2{
+    font-size: 1em;
+    text-align: center;
+}
+
+
+}
+
+@media screen and (max-width: 365px){
+    .social-box{
+        margin: 5px;
+        font-size: 1.2em;
+        text-align: center;
+
+    }
+     .nav-list{
+        margin-bottom: 15%;
+        text-align: center;
+        font-size: 1em;
+    }
 }
