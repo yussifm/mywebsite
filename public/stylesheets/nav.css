@@ -16,34 +16,31 @@ header nav {
 /* Logo */
 .nav-logo {
 	font-size: 1em;
-    text-align: center;
-    margin-bottom: 5%;
+	text-align: center;
+	margin-bottom: 5%;
 }
-.nav-logo h2{
-    color: rgb(77, 76, 76);
-    text-align: center;
+.nav-logo h2 {
+	color: rgb(77, 76, 76);
+	text-align: center;
 }
 
 @keyframes linkanim {
-    from{
-        background-color: linear-gradient(145deg, #23dca4, #1eb98a);
-    }
-    to{
-        background-color: #21ce99; 
-    }
+	from {
+		background-color: linear-gradient(145deg, #23dca4, #1eb98a);
+	}
+	to {
+		background-color: #21ce99;
+	}
 }
 
-
-
-#logo{
-    width: 100px;
-    height: 100px;
-    margin-bottom: 2%;
-    object-fit: cover;
-border-radius: 164px;
-background: linear-gradient(145deg, #ffffff, #e6e6e6);
-box-shadow:  5px 5px 10px #666666,
-             -5px -5px 10px #ffffff;
+#logo {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 2%;
+	object-fit: cover;
+	border-radius: 164px;
+	background: linear-gradient(145deg, #ffffff, #e6e6e6);
+	box-shadow: 5px 5px 10px #666666, -5px -5px 10px #ffffff;
 }
 
 /* Logo end */
@@ -53,28 +50,23 @@ box-shadow:  5px 5px 10px #666666,
 	padding: 0.5em;
 	list-style-type: none;
 	margin-bottom: 1em;
- 
-
-
 }
 
-.nav-list ul li a{
-  color:  #525252;
-  font-size: 1.3em;
-  transition-property: padding;
-  transition-timing-function: ease-in-out;
- 
+.nav-list ul li a {
+	color: #525252;
+	font-size: 1.3em;
+	transition-property: padding;
+	transition-timing-function: ease-in-out;
 }
 
-.nav-list ul li a:hover{
-    padding: 0.5em;
-    border-radius: 5px;
-    animation-name: linkanim ;
-    
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-}
+.nav-list ul li a:hover {
+	padding: 0.5em;
+	border-radius: 5px;
+	animation-name: linkanim;
 
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
 
 /* Nav list end */
 
@@ -91,18 +83,18 @@ a {
 	text-align: center;
 }
 
-.nav-social ul li a{
-    transition-property: padding;
-  transition-timing-function: ease-in-out;
+.nav-social ul li a {
+	transition-property: padding;
+	transition-timing-function: ease-in-out;
 }
-.nav-social ul li a:hover{
-    padding: 15px;
+.nav-social ul li a:hover {
+	padding: 15px;
 }
 
 .nav-social {
-    display:flex;
-    justify-content:flex-start;
-    align-content: flex-start;
+	display: flex;
+	justify-content: flex-start;
+	align-content: flex-start;
 }
 
 .social-box {
@@ -116,54 +108,53 @@ a {
 
 /* Social end */
 
-
 @media screen and (max-width: 800px) {
-    .nav-list ul li{
-        display: inline;
-    }
-    .nav-logo{
-        margin-bottom: 15%;
-        text-align: center;
-        font-size: 2em;
-    }
-    .nav-list{
-        margin-bottom: 10%;
-        text-align: center;
-        font-size: 2em;
-    }
-    .social-box{
-        font-size: 2em;
-    }
+	.nav-list ul li {
+		display: inline;
+	}
+	.nav-logo {
+		margin-bottom: 15%;
+		text-align: center;
+		font-size: 2em;
+	}
+	.nav-list {
+		margin-bottom: 10%;
+		text-align: center;
+		font-size: 2em;
+	}
+	.social-box {
+		font-size: 2em;
+	}
 }
 
+@media screen and (max-width: 530px) {
+	.social-box {
+		font-size: 1.2em;
+		text-align: center;
+	}
+	.nav-list {
+		font-size: 1.2em;
+	}
 
-@media screen and (max-width: 530px){
-    .social-box{
-        font-size: 1.2em;
-        text-align: center;
-    }
-    .nav-list{
-        font-size: 1.2em;
-    }
-
-    .nav-logo h2{
-    font-size: 1em;
-    text-align: center;
+	.nav-logo h2 {
+		font-size: 1em;
+		text-align: center;
+	}
 }
 
+@media screen and (max-width: 365px) {
+	.social-box {
+		margin: 5px;
+		font-size: 1.2em;
+		text-align: center;
+	}
+	.nav-list {
+		margin-bottom: 15%;
+		text-align: center;
+		font-size: 1em;
+	}
 
-}
-
-@media screen and (max-width: 365px){
-    .social-box{
-        margin: 5px;
-        font-size: 1.2em;
-        text-align: center;
-
-    }
-     .nav-list{
-        margin-bottom: 15%;
-        text-align: center;
-        font-size: 1em;
-    }
+	.nav-logo {
+		margin-top: 5%;
+	}
 }
