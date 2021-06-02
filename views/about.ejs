@@ -4,41 +4,52 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title><%= title %></title>
-		<meta name="description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="/stylesheets/style.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-	</head>
-	<body>
-		<!--[if lt IE 7]>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>
+		<%= title %>
+	</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+	<!--[if lt IE 7]>
 			<p class="browsehappy"
 				>You are using an <strong>outdated</strong> browser. Please
 				<a href="#">upgrade your browser</a> to improve your experience.</p
 			>
 		<![endif]-->
-		<div class="main">
-			<div class="box box-1"> <%- include('partials/nav'); -%> </div>
-			<div class="box box-2" >
-      <div class="article">
+	<div class="main">
+		<div class="box box-1">
+			<%- include('partials/nav'); -%>
+		</div>
+		<div class="box box-2">
+			<div class="article typewriter">
 
-        <h1>Welcome to my page</h1>
+				<h1 style="text-decoration: underline;">About Me</h1>
 
-				<p>
-					lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur,
-					adipisicing elit. Debitis fugit quasi esse distinctio odio delectus
-					in, quae aliquam harum, natus officia at est. Illum officiis error
-					eveniet, quos aut placeat!
-				</p>
+				<div class="main-text">
+
+
+
+					<p>
+						As a lifelong learner, the experience I have gained by working on a wide range of impactful
+						projects
+						has equipped me with both technical and personal skills to work well in various environments as
+						a
+						a great team player.
+						I aspire to be an exceptional Software Engineer, Leader and Problem-solver.
+					</p>
 				</div>
+			</div>
 		</div>
 
 		<script src="" async defer></script>
-	</body>
+</body>
+
 </html>
